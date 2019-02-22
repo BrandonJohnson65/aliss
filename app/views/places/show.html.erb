@@ -101,3 +101,14 @@
 <% end %>
 </div>
 </div>
+<div class="booyah-box">
+
+<h1>Photos</h1>
+
+<% @place.photos.each do |photo| %>
+  <div>
+        <%= photo %>
+      <small><%= photo.user.email %></small>
+   
+  </div>
+<% end %>
